@@ -1,8 +1,6 @@
 # bitlabautomator
 
-# learning-lab-automator
-
-The Github Action automatically generates the needed files to create a Github Learning Lab. Refer to the below documentation for formatting requirements, how it works, and how to incorporate it:
+The Github Action automatically generates the needed files to create a BitLab. Refer to the below documentation for formatting requirements, how it works, and how to incorporate it:
 
 ---
 
@@ -106,31 +104,6 @@ File content:
 
 *Course description*
 ```
-
-### :three: Specifying the Camp name
-
-The Github Action will not run the Python file until a subdirectory (ie. Serverless-Functions) is specified. To do so, edit the `learninglabauto.py` file's `subdir` value.
-
-**Before:**
-```py
-subdir = ""
-
-if subdir == "":
-  exit()
-```
-
-**After:**
-```py
-subdir = "[Insert your camp name. Ex: Serverless-Functions]"
-
-if subdir == "":
-  exit()
-```
-
-### :four: Finishing up
-
-Once both the change to the `learninglabauto.py` file in `scripts/` and the addition of the other files are committed, the Github Action should trigger and run.
-
 Linked [here](https://github.com/emsesc/sample-learninglab) is a sample containing correctly formatted file names and structures.
 
 Watch this video for a walkthrough:
